@@ -3,9 +3,9 @@ Simple calculator takes two values and an indication of what operation to perfor
 '''
 
 # Input value 1
-value_1 = input("First Value ")
+value_1 = float(input("First Value "))
 # Input Value 2
-value_2 = input("Second Value")
+value_2 = float(input("Second Value "))
 # Input operator
 operator = input ("What operator 1: add, 2: subtract, 3: multiply, 4: divide")
 
