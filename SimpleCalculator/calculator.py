@@ -3,11 +3,19 @@ Simple calculator takes two values and an indication of what operation to perfor
 '''
 
 # Input value 1
-value_1 = float(input("First Value "))
-# Input Value 2
-value_2 = float(input("Second Value "))
+value_1 = ''
+value_2 = ''
+
+while not (value_1.replace('.','').isdigit())  or not (value_2.replace('.','').isdigit()):
+    value_1 = input("First Value ")
+    value_2 = input("Second Value ")
+
+value_1 = float(value_1)
+value_2 = float(value_2)
+
 # Input operator
 operator = input ("What operator 1: add, 2: subtract, 3: multiply, 4: divide")
+
 
 # evaluate operation based on the chosen options
 
